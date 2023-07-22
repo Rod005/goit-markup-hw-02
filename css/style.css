@@ -8,6 +8,7 @@
   --whitecolor: white;
   --slatecolor: #434455;
   --cloudcolor: #f4f4fd;
+  --cornflower: #e7e9fc;
 }
 body {
   font-family: "Roboto";
@@ -32,10 +33,14 @@ body {
 .studio-logo {
   color: var(--navyblue);
 }
+
+.current-page {
+  color: var(--iriscolor);
+}
 .pages {
   color: var(--navyblue, #2e2f42);
   text-decoration: none;
-  font-weight: 500px;
+  font-weight: 500;
 }
 .list {
   list-style-type: none;
@@ -66,7 +71,7 @@ body {
   letter-spacing: 1.12px;
 }
 .btn {
-  border: 1px;
+  border: 1px solid var(--cornflower);
   background-color: var(--cloudcolor);
   cursor: pointer;
   color: var(--iriscolor);
@@ -84,7 +89,8 @@ body {
   background-color: var(--oceancolor);
   color: var(--whitecolor);
   border-color: var(--oceancolor);
-  box-shadow: 0px;
+  box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12),
+    0px 2px 1px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.1);
 }
 
 .btn-primary {
@@ -100,6 +106,10 @@ body {
   border-radius: 4px;
   letter-spacing: 0.64px;
   border: 0;
+}
+.btn-primary:hover,
+.btn-primary:focus {
+  background-color: var(--oceancolor);
 }
 .btnlist {
   list-style-type: none;
